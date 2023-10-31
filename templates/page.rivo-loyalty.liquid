@@ -1,0 +1,149 @@
+<div id="rivo-page-wrapper" style="min-height:800px;"></div>
+
+<div class="page-section" id="faqs">
+  <div class="columns-faqs">
+    <div class="content-left">
+      <img src="https://cdn.shopify.com/s/files/1/0370/0215/0024/files/Signature_detergent_pouring_detail_c9ad9e41-08e6-49f7-946a-fa09895c6510_590x.jpg" alt="Dirty Labs">
+    </div>
+    <div class="content-right">
+          <div class="title" style="font-size: 40px; color: #000000; font-family: inherit; text-align: left;">Δες τι μας ρωτούν συχνά οι φίλοι μας</div>
+    <div class="accordion-wrapper">
+          <button class="accordion">Πώς βλέπω πόσους πόντους έχω μαζέψει;</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        <button class="accordion">Πόσο διαρκούν οι πόντοι μου;</button>
+            <div class="panel">
+              <p>Οι πόντοι δεν λήγουν ποτέ.</p>
+            </div>
+        <button class="accordion">Πώς λαμβάνω το κουπόνι μου;</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+            <button class="accordion">Πώς βλέπω τα κουπόνια που έχω κερδίσει;</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+            <button class="accordion">Πόσο καιρό έχω για να εξαργυρώσω το κουπόνι μου;</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+            <button class="accordion">Πώς εξαργυρώνω το κουπόνι μου;</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+            <button class="accordion">Μπορώ να εξαργυρώσω περισσότερα από 1 κουπόνια σε μια παραγγελία;</button>
+          <div class="panel">
+            <p>Όχι. Μπορείς να εξαργυρώνεις μόνο 1 κουπόνι ανά παραγγελία άνω των 35€. Αν έχεις περισσότερα κουπόνια, θα πρέπει να κάνεις ισάριθμες παραγγελίες άνω των 35€.</p>
+          </div>
+                  <button class="accordion">Εξαργύρωσα το κουπόνι μου σε μια αγορά. Μπορώ να κάνω επιστροφή της παραγγελίας;</button>
+          <div class="panel">
+            <p>Ναι. Εάν θέλεις να επιστρέψεις μια παραγγελία που αγόρασες με χρήση κουπονιού, θα λάβεις πίσω το κουπόνι σου.</p>
+          </div>
+                  <button class="accordion">Μπορώ να εξαργυρώσω το κουπόνι μου σε προϊόντα προσφοράς;</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<style>
+#faqs {
+  padding: 100px 5% !important;
+}
+  
+.columns-faqs {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+@media (max-width: 800px) {
+  .section {
+  padding: 75px 20px;
+}
+  .columns-faqs {
+    flex-direction: column;
+  }
+  .content-left {
+    padding: 0 !important;
+  }
+  .content-right {
+    padding-top: 50px;
+  } 
+}
+
+.content-left, .content-right {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+}
+
+.content-left {
+  padding: 0 75px;
+}
+
+/* ACCORDION */
+.accordion-wrapper {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.accordion {
+  font-family: inherit;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.active, .accordion:hover {
+  background-color: white;
+}
+
+.accordion:before {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+}
+
+.active:before {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  border: none;
+  text-align: start;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .15s linear,opacity .15s linear .1s;
+}
+</style>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
